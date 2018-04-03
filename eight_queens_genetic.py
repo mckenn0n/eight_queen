@@ -5,7 +5,7 @@ N = 8
 win = 0
 stop = False
 C = 0
-REPS = 1000
+REPS = 10
 def conflicts(s):
 	h = 0
 	for i in range(len(s)):
@@ -39,13 +39,32 @@ def kinda_random(population):
 
 # def kinda_random_two(population):
 # 	best = []
+# 	temp = []
+# 	first = random.uniform(0, 1)
+# 	second = random.uniform(0, 1)
 # 	p = population.copy()
 # 	s = 0
 # 	for i in range(len(p)):
 # 		s += p[i][1]
 # 	for i in range(len(p)):
-		
-
+# 		if i == 0:
+# 			temp.append([p[i][0],p[i][1],p[i][1]/s])
+# 		else:
+# 			temp.append([p[i][0],p[i][1],float("{0:.5f}".format(((p[i][1]/s)+temp[i-1][2])))])
+# 			if temp[i][2] > 1:
+# 				temp[i][2] = 1.0
+# 	temp[len(p)-1][2] = 1.0
+# 	x = 0
+# 	while first > temp[x][2]:
+# 		# print('*',first,temp[x][2])
+# 		x+=1
+# 	best.append(temp[x])
+# 	y = 0
+# 	while second > temp[y][2]:
+# 		# print(second,temp[y][2])
+# 		y+=1
+# 	best.append(temp[y])
+# 	# print(temp)
 # 	return best
 
 
